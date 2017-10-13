@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.romananchugov.homeworkapplicationlesson1.MainActivity"
+    android:paddingLeft="50dp"
+    android:paddingStart="50dp"
+    android:paddingRight="50dp"
+    android:paddingEnd="50dp"
+    android:background="#8ACDC5"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="219dp"
+        android:src="@drawable/styleru"
+        android:layout_weight="0.00"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:hint="Логин"
+        android:linksClickable="true"
+        android:id="@+id/loginEditText"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/loginEditText"
+        android:autoLink="web"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:textColor="#000000" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dop"
+        android:layout_alignBaseline="@+id/passwordEditText"
+        android:layout_alignBottom="@+id/passwordEditText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#008184"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#005962"
+        android:text="Войти"
+        android:textColor="#8ACDC5"
+        android:textAllCaps="false"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:text="Информация об организациях"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/arrow_down_float"
+        android:layout_weight="0.23"
+        android:layout_gravity="center"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp" />
+
+</RelativeLayout>
